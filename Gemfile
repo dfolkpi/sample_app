@@ -27,10 +27,13 @@ gem 'mysql2', '~> 0.2.11'
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
 group :development do
+  gem 'ZenTest'
+  gem 'autotest'
   gem 'rspec-rails', '2.6.1'
 end
 
 group :test do
+  gem 'ZenTest'
   gem 'rspec-rails', '2.6.1'
   gem 'webrat', '0.7.1'
 end
